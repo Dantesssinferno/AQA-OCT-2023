@@ -18,10 +18,10 @@ public class PolyDemo {
         followTheRoute(gasTruck);
         followTheRoute(hugeTruck);
 
-        gasCar.goTo(city: "Kyiv", destination: "Odessa");
-        gasCar.goTo(city: "Kharkiv", destination: "Uman", passingThrough: "Kyiv");
-        gasCar.goTo(city: "Lviv", destination: "Odessa", passingThrough: "Ivano-Frankivs'k", passengers:5);
-
+        gasCar.goTo("Kyiv", "Odessa");
+        gasCar.goTo("Kharkiv", "Uman", "Kyiv");
+        gasCar.goTo("Lviv", "Odessa",  "Ivano-Frankivs'k", 5);
+        gasCar.goTo("Odessa", "Kyiv", "Uman", 5, 5);
     }
     public static void followTheRoute(IMovable iCar) {
         System.out.println("==========================");
