@@ -21,16 +21,15 @@ public class PolyDemo {
         gasCar.goTo(city: "Kyiv", destination: "Odessa");
         gasCar.goTo(city: "Kharkiv", destination: "Uman", passingThrough: "Kyiv");
         gasCar.goTo(city: "Lviv", destination: "Odessa", passingThrough: "Ivano-Frankivs'k", passengers:5);
-        gasCar.goTo(city:"Lviv", destination: "Odessa", passingThrough: "Ivano-Frankivs'k", passengers:5, splitFuelPayment:5);
 
-        public static void followTheRoute(IMovable iCar) {
-            System.out.println("==========================");
-            iCar.accelerate();
-            iCar.turnLeft();
-            iCar.accelerate();
-            iCar.stop();
-            iCar.turnRight();
-            iCar.accelerate();
-        }
+    }
+    public static void followTheRoute(IMovable iCar) {
+        System.out.println("==========================");
+        iCar.accelerate();
+        iCar.turnLeft();
+        iCar.accelerate();
+        iCar.stop();
+        iCar.turnRight();
+        iCar.accelerate();
     }
 }

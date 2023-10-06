@@ -1,6 +1,6 @@
 package org.prog.poly;
 
-public class GasTruck implements GasCar {
+public class GasTruck extends GasCar {
 
 
 
