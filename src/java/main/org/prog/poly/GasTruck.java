@@ -1,6 +1,6 @@
 package org.prog.poly;
 
-public class GasTruck extends GasCar {
+public class GasTruck implements GasCar {
 
 
 
@@ -13,4 +13,5 @@ public class GasTruck extends GasCar {
     public void turnRight() {
         System.out.println("Gas truck slows down and turns right");
     }
+
 }
